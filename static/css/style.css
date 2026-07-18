@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align:center;
+    background:#dff6e3;
+}
+
+h1{
+    color:#2b7a2b;
+}
+
+a{
+    text-decoration:none;
+    padding:10px;
+}
