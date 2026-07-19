@@ -1,64 +1,56 @@
-# 🌍 Save The Planet AI
+# 🌎 Save The Planet AI
 
-Aplicación educativa interactiva que combina IA, gamificación y conciencia ambiental.
+Proyecto desarrollado para un hackathon con el objetivo de concientizar sobre el cambio climático y el cuidado del medio ambiente.
 
-## Tecnologías
+## 🚀 Características
 
-- 🐍 Python
-- 🔥 Flask
-- 🗄 SQLite
-- 🎤 SpeechRecognition (próximamente)
+- 🌱 Página web informativa.
+- 🎮 Juego educativo.
+- 🤖 Bot de Discord interactivo.
+- 📚 Información sobre reciclaje, ahorro de agua y energía.
+- ❓ Quiz ambiental.
+
+## 🛠️ Tecnologías
+
 - HTML5
 - CSS3
+- JavaScript
+- Python
+- Discord.py
 
-## Funciones
+## 🤖 Comandos del bot
 
-- ✔ Juego ambiental con preguntas de opción múltiple
-- ✔ Sistema de vidas y tiempo límite por pregunta (sin JavaScript)
-- ✔ Salud del planeta que baja con cada respuesta incorrecta
-- ✔ EcoGPT: asistente que responde por palabra clave
-- ✔ Quiz educativo estilo Kahoot
-- ✔ Resultados personalizados (estado del planeta, impacto positivo)
-- ✔ Resultados guardados en SQLite
+- !start
+- !agua
+- !reciclaje
+- !energia
+- !arboles
+- !clima
+- !transporte
+- !animales
+- !eco
+- !quiz
+- !puntaje
 
-## Instalación
+## 📂 Instalación
 
-```
+```bash
+git clone https://github.com/TU_USUARIO/TU_REPOSITORIO.git
+cd TU_REPOSITORIO
 pip install -r requirements.txt
-python app.py
 ```
 
-Luego abrí `http://127.0.0.1:5000` en el navegador.
+Crear un archivo `.env`:
 
-## Estructura
-
-```
-SaveThePlanetAI
-│   app.py
-│   README.md
-│   requirements.txt
-│
-├── static
-│   ├── css/style.css
-│   ├── images/          (agregar forest.jpg, before.jpg, after.jpg, planet.jpg)
-│   ├── sounds/
-│   └── videos/
-├── templates
-│   ├── index.html
-│   ├── game.html
-│   ├── quiz.html
-│   ├── chatbot.html
-│   ├── about.html
-│   ├── before_after.html
-│   └── result.html
-├── data
-│   ├── questions.json
-│   ├── facts.json
-│   └── tips.json
-└── database
-    └── database.db      (se crea solo al iniciar la app)
+```env
+TOKEN=TU_TOKEN_DE_DISCORD
 ```
 
-## Autora
+Ejecutar:
 
-Sara Drago Ponzoni · Hackathon 2026
+```bash
+python bot.py
+```
+
+## Autor
+Sara Drago Ponzoni
