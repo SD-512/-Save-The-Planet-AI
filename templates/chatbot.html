@@ -3,15 +3,111 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>EcoGPT</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Bot · Save The Planet AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            🌍 Save The Planet AI
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="{{ url_for('index') }}">
+                    Inicio
+                </a>
+            </li>
 
-    <h1>EcoGPT próximamente</h1>
+            <li>
+                <a href="{{ url_for('game') }}">
+                    Juego
+                </a>
+            </li>
 
-    <a href="/">Volver</a>
+            <li>
+                <a href="{{ url_for('chatbot') }}">
+                    Discord Bot
+                </a>
+            </li>
 
+            <li>
+                <a href="{{ url_for('about') }}">
+                    Proyecto
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <section class="discord">
+
+        <h1>
+            🤖 EcoBot Discord
+        </h1>
+
+        <p>
+            Un bot creado para ayudar a aprender sobre
+            cambio climático y hábitos sostenibles.
+        </p>
+
+        <div class="bot-card">
+            <h3>
+                Funciones del bot
+            </h3>
+
+            <ul>
+                <li>
+                    🌱 Responde consejos ambientales
+                </li>
+
+                <li>
+                    💧 Da información sobre ahorro de agua
+                </li>
+
+                <li>
+                    ♻️ Enseña sobre reciclaje
+                </li>
+
+                <li>
+                    🌎 Comparte datos sobre cambio climático
+                </li>
+            </ul>
+        </div>
+        <div class="bot-card">
+            <h3>
+                Comandos disponibles
+            </h3>
+            <p>
+                <b>!agua</b>
+                - Consejos para ahorrar agua
+            </p>
+            <p>
+                <b>!plastico</b>
+                - Información sobre contaminación
+            </p>
+            <p>
+                <b>!energia</b>
+                - Datos sobre energías renovables
+            </p>
+            <p>
+                <b>!clima</b>
+                - Información sobre cambio climático
+            </p>
+
+        </div>
+        <a href="https://discord.com/channels/1528161870807044106/1528161871327400038" target="_blank"
+            class="btn btn-primary">
+            Hablar con el bot
+        </a>
+    </section>
+    <footer class="footer">
+        <p>
+            🌍 Save The Planet AI · Hackathon 2026
+        </p>
+        <p>
+            Proyecto desarrollado por Sara Drago Ponzoni
+        </p>
+    </footer>
 </body>
 
 </html>

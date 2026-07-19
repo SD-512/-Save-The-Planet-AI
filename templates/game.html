@@ -3,15 +3,90 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Juego</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego | Save The Planet AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            🌍 Save The Planet AI
+        </div>
+        <ul class="nav-links">
+            <li><a href="{{ url_for('index') }}">Inicio</a></li>
+            <li><a href="{{ url_for('game') }}" class="active">Juego</a></li>
+            <li><a href="{{ url_for('chatbot') }}">Discord Bot</a></li>
+            <li><a href="{{ url_for('about') }}">Acerca de</a></li>
+        </ul>
+        <div class="nav-stats">
+            ❤️ {{ vidas }}
+            <span>Puntos: {{ puntos }}</span>
+        </div>
+    </nav>
+    <main class="game-container">
+        <h1>🌱 Desafío ambiental</h1>
+        <p class="game-info">
+            Pregunta {{ numero }} de {{ total }}
+        </p>
+        <div class="planet">
+            <p>Estado del planeta:</p>
+            <div class="health-bar">
+                <div class="health-fill" style="width: {{ salud }}%;">
+                </div>
+            </div>
+            <p>{{ salud }}% de salud</p>
+        </div>
+        <section class="question-box">
+            {% if feedback %}
+            {% if feedback.seleccionada is none %}
+            <p class="wrong">
+                ⏰ Se acabó el tiempo
+            </p>
+            {% endif %}
+            <h2>{{ pregunta.question }}</h2>
 
-    <h1>Juego próximamente</h1>
+            <div class="answers">
+                {% for opcion in pregunta.options %}
+                <div class="answer
+                        {% if loop.index0 == feedback.correcta %}
+                            correct
+                        {% elif loop.index0 == feedback.seleccionada %}
+                            wrong
+                        {% endif %}
+                        
+                        ">
+                    {{ opcion }}
+                </div>
+                {% endfor %}
+            </div>
+            <a class="btn" href="{{ url_for('game', siguiente=1) }}">
+                Siguiente pregunta
+            </a>
+            {% else %}
+            <h2>
+                {{ pregunta.question }}
+            </h2>
+            <form method="POST" class="answers">
+                {% for opcion in pregunta.options %}
+                <button type="submit" name="answer" value="{{ loop.index0 }}" class="answer">
+                    {{ opcion }}
+                </button>
+                {% endfor %}
+            </form>
+            {% endif %}
+        </section>
+    </main>
+    <footer class="footer">
 
-    <a href="/">Volver</a>
+        <p>
+            🌍 Save The Planet AI - Hackathon 2026
+        </p>
 
+        <p>
+            Proyecto realizado por Sara Drago Ponzoni
+        </p>
+    </footer>
 </body>
 
 </html>

@@ -1,0 +1,29 @@
+[
+    {
+        "question": "¿Qué produce más CO₂?",
+        "options": [
+            "Bicicleta",
+            "Auto",
+            "Caminar"
+        ],
+        "correct": 1
+    },
+    {
+        "question": "¿Qué energía es renovable?",
+        "options": [
+            "Energía solar",
+            "Carbón",
+            "Petróleo"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "¿Cuál de estos gases produce el efecto invernadero?",
+        "options": [
+            "Oxígeno",
+            "Dióxido de carbono",
+            "Nitrógeno"
+        ],
+        "correct": 1
+    }
+]

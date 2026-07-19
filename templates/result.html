@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado | Save The Planet AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            🌍 Save The Planet AI
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="{{ url_for('index') }}">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('game') }}">
+                    Juego
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('chatbot') }}">
+                    Discord Bot
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('about') }}">
+                    Acerca de
+                </a>
+            </li>
+        </ul>
+    </nav>
+    <main class="result-container">
+        {% if gano %}
+        <h1>
+            🌎 ¡Planeta salvado!
+        </h1>
+        <p>
+            Completaste el desafío ambiental.
+        </p>
+        {% else %}
+        <h1>
+            🌱 El planeta necesita más ayuda
+        </h1>
+        <p>
+            Podés volver a intentarlo y mejorar tu resultado.
+        </p>
+        {% endif %}
+        <section class="result-info">
+            <h2>
+                Resultado
+            </h2>
+            <p>
+                Puntos obtenidos:
+                <strong>{{ puntos }}/{{ puntaje_maximo }}</strong>
+            </p>
+            <p>
+                Estado del planeta:
+                <strong>{{ estado_planeta }}</strong>
+            </p>
+            <p>
+                Salud del planeta:
+                <strong>{{ salud }}%</strong>
+            </p>
+            <p>
+                Impacto positivo:
+                <strong>{{ impacto }}%</strong>
+            </p>
+        </section>
+        <div class="result-buttons">
+            <a href="{{ url_for('game_reset') }}" class="btn">
+                Jugar otra vez
+            </a>
+            <a href="{{ url_for('index') }}" class="btn secondary">
+                Volver al inicio
+            </a>
+        </div>
+    </main>
+    <footer class="footer">
+        <p>
+            🌍 Save The Planet AI - Hackathon 2026
+        </p>
+        <p>
+            Proyecto realizado por Sara Drago Ponzoni
+        </p>
+    </footer>
+</body>
+
+</html>

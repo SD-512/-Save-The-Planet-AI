@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Antes y Después · Save The Planet AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">🌍 Save The Planet AI</div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="{{ url_for('index') }}">
+                    Inicio
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('game') }}">
+                    Juego
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('chatbot') }}">
+                    Discord Bot
+                </a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('about') }}">
+                    Proyecto
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="about-hero">
+        <h1>Antes y Después</h1>
+
+        <p>
+            Las acciones humanas pueden cambiar el estado del planeta.
+        </p>
+    </section>
+
+    <section class="about-grid">
+        <div class="about-block">
+            <h3>❌ Antes</h3>
+
+            <img src="{{ url_for('static', filename='images/before.jpg') }}" alt="Zona contaminada" width="250">
+
+            <p>
+                La contaminación y los residuos afectan
+                a los ecosistemas y animales.
+            </p>
+        </div>
+
+        <div class="about-block">
+            <h3>✅ Después</h3>
+
+            <img src="{{ url_for('static', filename='images/after.jpg') }}" alt="Zona limpia" width="250">
+
+            <p>
+                Reducir residuos y cuidar los recursos
+                ayuda a recuperar el ambiente.
+            </p>
+        </div>
+    </section>
+
+    <section class="about-preview">
+        <div class="about-text">
+            <h2>Pequeñas decisiones generan cambios</h2>
+
+            <p>
+                Reciclar, ahorrar agua y usar transportes
+                menos contaminantes son acciones simples
+                que ayudan al planeta.
+            </p>
+
+            <a href="{{ url_for('game') }}" class="btn btn-primary">
+                Probar juego
+            </a>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>🌍 Save The Planet AI · Hackathon 2026</p>
+        <p>Proyecto desarrollado por Sara Drago Ponzoni</p>
+    </footer>
+</body>
+
+</html>

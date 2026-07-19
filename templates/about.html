@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto · Save The Planet AI</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">🌍 Save The Planet AI</div>
+
+        <ul class="nav-links">
+            <li>
+                <a href="{{ url_for('index') }}">Inicio</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('game') }}">Juego</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('chatbot') }}">Discord Bot</a>
+            </li>
+
+            <li>
+                <a href="{{ url_for('about') }}" class="active">Proyecto</a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="about-hero">
+        <h1>¿Qué es Save The Planet AI?</h1>
+
+        <p>
+            Es un proyecto educativo que utiliza programación e inteligencia artificial
+            para enseñar sobre el cambio climático de una forma interactiva.
+        </p>
+    </section>
+
+    <section class="about-grid">
+        <div class="about-block">
+            <h3>🎯 Objetivo</h3>
+
+            <p>
+                Crear una herramienta donde las personas puedan aprender
+                sobre el cuidado del planeta mediante juegos, preguntas y consejos.
+            </p>
+        </div>
+
+        <div class="about-block">
+            <h3>🌱 Problema</h3>
+
+            <p>
+                Muchas personas conocen el cambio climático pero no saben
+                cómo sus acciones diarias afectan al ambiente.
+            </p>
+        </div>
+
+        <div class="about-block">
+            <h3>💡 Solución</h3>
+
+            <p>
+                Una aplicación con un juego ambiental y un bot de Discord
+                que responde dudas y comparte información ecológica.
+            </p>
+        </div>
+
+        <div class="about-block">
+            <h3>🛠 Tecnologías</h3>
+
+            <ul>
+                <li>🐍 Python</li>
+
+                <li>🌐 Flask</li>
+
+                <li>🤖 Discord Bot</li>
+
+                <li>HTML + CSS</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>🌍 Save The Planet AI · Hackathon 2026</p>
+        <p>Proyecto desarrollado por Sara Drago Ponzoni</p>
+    </footer>
+</body>
+
+</html>

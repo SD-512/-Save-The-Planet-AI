@@ -3,27 +3,103 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Save The Planet AI</title>
-
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
 </head>
 
 <body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            🌍 Save The Planet AI
+        </div>
+        <ul class="nav-links">
+            <li>
+                <a href="{{ url_for('index') }}" class="active">
+                    Inicio
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('game') }}">
+                    Juego
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('chatbot') }}">
+                    Discord Bot
+                </a>
+            </li>
+            <li>
+                <a href="{{ url_for('about') }}">
+                    Acerca de
+                </a>
+            </li>
+        </ul>
+    </nav>
 
-    <h1>🌍 Save The Planet AI</h1>
+    <main>
+        <section class="home">
+            <h1>
+                🌱 Save The Planet AI
+            </h1>
+            <p>
+                Una aplicación educativa que utiliza inteligencia artificial
+                para aprender sobre cambio climático y hábitos sustentables.
+            </p>
+            <a href="{{ url_for('game') }}" class="btn">
+                Comenzar desafío
+            </a>
+        </section>
+        <section class="features">
+            <div class="feature">
+                <h3>
+                    🌍 Aprende
+                </h3>
+                <p>
+                    Conocé datos sobre contaminación,
+                    energía y cuidado ambiental.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                    🎮 Juega
+                </h3>
+                <p>
+                    Responde preguntas y ayuda a mantener
+                    saludable al planeta.
+                </p>
+            </div>
+            <div class="feature">
+                <h3>
+                    🤖 Discord Bot
+                </h3>
+                <p>
+                    Un asistente que puede responder dudas
+                    sobre el medio ambiente.
+                </p>
+            </div>
+        </section>
+        <section class="description">
+            <h2>
+                ¿Cuál es la idea?
+            </h2>
+            <p>
+                Save The Planet AI busca enseñar sobre el cambio climático
+                de una manera sencilla e interactiva. Mediante juegos,
+                preguntas y un bot inteligente, los usuarios pueden aprender
+                cómo pequeñas acciones ayudan al planeta.
+            </p>
+        </section>
+    </main>
+    <footer class="footer">
 
-    <p>Cada decisión cambia el futuro del planeta.</p>
-
-    <a href="/game">Comenzar juego</a>
-
-    <br><br>
-
-    <a href="/quiz">Cuestionario</a>
-
-    <br><br>
-
-    <a href="/ecogpt">EcoGPT</a>
-
+        <p>
+            🌍 Save The Planet AI - Hackathon 2026
+        </p>
+        <p>
+            Proyecto realizado por Sara Drago Ponzoni
+        </p>
+    </footer>
 </body>
 
 </html>

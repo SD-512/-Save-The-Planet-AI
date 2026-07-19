@@ -1,0 +1,52 @@
+[
+    {
+        "question": "¿Qué deberías hacer con una botella plástica?",
+        "options": [
+            "Reciclarla",
+            "Quemarla",
+            "Tirarla",
+            "Enterrarla"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "¿Cuál de estas opciones ahorra más agua?",
+        "options": [
+            "Ducha corta",
+            "Dejar la canilla abierta",
+            "Lavar el auto a diario",
+            "Regar al mediodía"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "¿Qué medio de transporte contamina menos?",
+        "options": [
+            "Bicicleta",
+            "Auto a nafta",
+            "Avión",
+            "Moto"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "¿Qué acción ayuda a reducir residuos?",
+        "options": [
+            "Reutilizar envases",
+            "Usar bolsas nuevas siempre",
+            "Tirar comida",
+            "Comprar de más"
+        ],
+        "correct": 0
+    },
+    {
+        "question": "¿Cuál de estas fuentes de energía es renovable?",
+        "options": [
+            "Solar",
+            "Carbón",
+            "Petróleo",
+            "Gas natural"
+        ],
+        "correct": 0
+    }
+]
